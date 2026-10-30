@@ -14,7 +14,7 @@
 // Every block and every table row here carries data-pdf-page-boundary, so a
 // page can end between rows or blocks but never cuts through one.
 import React from 'react';
-import { filledOrderDetails, getStateCode, printedSubtotal, roundQty } from '../utils';
+import { filledOrderDetails, getStateCode, printedSubtotal, roundQty } from '../../utils';
 import SignatureImages from './SignatureImages';
 
 const LINE = '#1f2937';

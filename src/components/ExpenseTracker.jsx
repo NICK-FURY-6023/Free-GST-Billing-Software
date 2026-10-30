@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Wallet, Plus, Edit3, Trash2, Search, X, Save, Calendar } from 'lucide-react';
 import { getAllExpenses, saveExpense, deleteExpense, getProfile } from '../store';
-import { formatCurrency, getFYOptions, belongsToProfile, isUnassignedToBusiness } from '../utils';
+import { formatCurrency, getFYOptions, belongsToProfile, isUnassignedToBusiness } from '../../utils';
 import UnassignedBanner from './UnassignedBanner';
 import { toast } from './Toast';
 import { confirmAction } from './ConfirmModal';

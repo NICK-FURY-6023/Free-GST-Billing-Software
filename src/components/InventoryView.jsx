@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Package, Search, Plus, Edit3, Trash2, X, Save, Upload, Table2 } from 'lucide-react';
 import { getAllProducts, saveProduct, deleteProduct, getProfile, getStockAlertSettings } from '../store';
-import { getAllUnits, getCountryConfig, formatCurrency } from '../utils';
+import { getAllUnits, getCountryConfig, formatCurrency } from '../../utils';
 import { toast } from './Toast';
 import { confirmAction } from './ConfirmModal';
 import HelpButton from './HelpButton';

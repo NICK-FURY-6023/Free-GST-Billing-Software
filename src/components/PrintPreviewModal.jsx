@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { X, Printer, Download, Loader, ZoomIn, ZoomOut } from 'lucide-react';
 import InvoicePreview from './InvoicePreview';
-import { getPaperSize } from '../utils';
+import { getPaperSize } from '../../utils';
 
 // v1.10.36 — Portal-based print preview modal.
 //

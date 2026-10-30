@@ -4,7 +4,7 @@
 // stay numbers) and Print / PDF (the table alone on its own page; choose
 // "Save as PDF" in the print dialog).
 import { Download, FileSpreadsheet, Printer } from 'lucide-react';
-import { toCsvLine } from '../utils';
+import { toCsvLine } from '../../utils';
 import { buildXlsx } from '../utils/xlsx';
 import { toast } from './Toast';
 

@@ -5,7 +5,7 @@
 import { useEffect, useState } from 'react';
 import { Package } from 'lucide-react';
 import { getAllBills, getAllProducts, getAllPurchases } from '../store';
-import { localToday } from '../utils';
+import { localToday } from '../../utils';
 import { closingStock, stockValueOf } from '../utils/products';
 import { toast } from './Toast';
 import TableExport from './TableExport';

@@ -21,7 +21,7 @@
  * for the client is unchanged.
  */
 
-import { amountDue, paymentStatusFor, isCancelledBill, SALES_INVOICE_TYPES, localToday } from '../utils';
+import { amountDue, paymentStatusFor, isCancelledBill, SALES_INVOICE_TYPES, localToday } from '../../utils';
 
 // What the client owes on a bill: the total less TDS they deduct. Nothing on
 // a cancelled invoice, or on a quotation / proforma / challan (not a sale), so

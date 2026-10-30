@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { RefreshCw, Plus, Edit3, Trash2, Play, Pause, X, Save } from 'lucide-react';
 import { getAllRecurring, saveRecurring, deleteRecurring, getAllClients, getProfile, generateRecurringNow } from '../store';
-import { formatCurrency, INVOICE_TYPES, belongsToProfile, isUnassignedToBusiness, templateTotals, localToday, toLocalIsoDate, parseLocalDate } from '../utils';
+import { formatCurrency, INVOICE_TYPES, belongsToProfile, isUnassignedToBusiness, templateTotals, localToday, toLocalIsoDate, parseLocalDate } from '../../utils';
 import UnassignedBanner from './UnassignedBanner';
 import { toast } from './Toast';
 import { confirmAction } from './ConfirmModal';

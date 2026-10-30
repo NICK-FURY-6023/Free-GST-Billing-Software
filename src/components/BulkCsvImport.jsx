@@ -8,7 +8,7 @@ import {
   getProfile, getAllBills, saveBill, getAllProducts, saveProduct, applyStockChanges,
   getAllClients, saveClient, getAllPurchases, savePurchase,
 } from '../store';
-import { belongsToProfile, isCancelledBill, isInterstateSupply, roundQty, localToday } from '../utils';
+import { belongsToProfile, isCancelledBill, isInterstateSupply, roundQty, localToday } from '../../utils';
 import {
   salesCsvToBills, billsToSalesCsv, purchaseCsvToRecords, purchasesToCsv, SALES_TEMPLATE, PURCHASE_TEMPLATE,
 } from '../utils/bulkCsv';

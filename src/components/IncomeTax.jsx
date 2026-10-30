@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { Calculator, Landmark, FileText, TrendingUp, Upload, Info, Check, X, ChevronRight, Briefcase, Clock, Download } from 'lucide-react';
 import { getAllBills, getAllExpenses, getAllPurchases, getProfile } from '../store';
-import { formatCurrency } from '../utils';
+import { formatCurrency } from '../../utils';
 import { getPrintSettings } from '../utils/printSettings';
 import HelpButton from './HelpButton';
 
@@ -39,7 +39,7 @@ import {
   effectiveDeductionCap,
   CURRENT_FY as ENGINE_FY,
 } from '../utils/itr.js';
-import { getFinancialYearLabel, belongsToProfile, isCancelledBill, salesSign, localToday, parseLocalDate } from '../utils';
+import { getFinancialYearLabel, belongsToProfile, isCancelledBill, salesSign, localToday, parseLocalDate } from '../../utils';
 
 // Business income is counted without GST (GST collected is not income, and GST
 // paid comes back as credit), in rupees only, from real sales: a quote or a

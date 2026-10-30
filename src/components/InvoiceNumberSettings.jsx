@@ -11,7 +11,7 @@ import { getInvoiceNumberSettings, saveInvoiceNumberSettings, getNumberSeriesMap
 import {
   getFinancialYearLabel, nextCounterValue, MAX_START_NUMBER, DEFAULT_NUMBER_SETTINGS,
   formatDocNumber, counterKeyFor, ownPrefixProblem, numberFormatProblem,
-} from '../utils';
+} from '../../utils';
 import { getPrintSettings } from '../utils/printSettings';
 import { toast } from './Toast';
 import { confirmAction } from './ConfirmModal';

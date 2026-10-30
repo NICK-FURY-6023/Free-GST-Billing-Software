@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Building2, FileText, BarChart3, Shield, ChevronRight, ChevronLeft, Check, ArrowRight, Image, PenTool } from 'lucide-react';
 import { saveProfile, setRegionMode } from '../store';
-import { getStatesForCountry, getCountryConfig, detectCountryFromBrowser, createEmptyAccount } from '../utils';
+import { getStatesForCountry, getCountryConfig, detectCountryFromBrowser, createEmptyAccount } from '../../utils';
 import { toast } from './Toast';
 
 const STEPS = [

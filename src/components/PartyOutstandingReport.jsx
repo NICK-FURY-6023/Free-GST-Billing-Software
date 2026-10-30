@@ -3,7 +3,7 @@
 // utils/partyOutstanding.js (unit-tested); this file only shows and exports it.
 import { useState } from 'react';
 import { Wallet } from 'lucide-react';
-import { getFinancialYearStart } from '../utils';
+import { getFinancialYearStart } from '../../utils';
 import { periodMonths, partyOutstanding, billCurrency } from '../utils/partyOutstanding';
 import TableExport from './TableExport';
 

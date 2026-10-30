@@ -122,6 +122,7 @@ const includeAtSystem = [
   'package.json',
   'package-lock.json',
   'server.js',
+  'utils.js',
   'README.md',
   'LICENSE',
   'CHANGELOG.md',
@@ -131,22 +132,8 @@ for (const f of includeAtSystem) {
   if (existsSync(src)) copyFileSync(src, join(SYSTEM, f));
 }
 
-// v1.10.63 — reported (#54, @ANIM35H): the shipped server could not start.
-//
-//   Error [ERR_MODULE_NOT_FOUND]: Cannot find module '_system/src/utils.js'
-//     imported from '_system/server.js'
-//
-// server.js has imported `./src/utils.js` for computeInvoiceTotals since
-// v1.10.31. The ZIP-slimming commit then dropped `src/` to halve the
-// download, without noticing the SERVER had grown a runtime dependency on
-// one file inside it. Every release since shipped a server that exits
-// before binding, which the launcher reported only as "Server did not
-// respond in 15s" — no mention of the real cause.
-//
-// src/utils.js is standalone (it imports nothing), so shipping that single
-// file is the whole fix. The rest of src/ stays out.
-mkdirSync(join(SYSTEM, 'src'), { recursive: true });
-copyFileSync(join(REPO_ROOT, 'src', 'utils.js'), join(SYSTEM, 'src', 'utils.js'));
+// v1.10.63 — moved to root for cleaner architecture
+copyFileSync(join(REPO_ROOT, 'utils.js'), join(SYSTEM, 'utils.js'));
 
 copyDirRecursive(join(REPO_ROOT, 'dist'), join(SYSTEM, 'dist'));
 // Only ship the scripts that postinstall / release-time need — not the
